@@ -112,6 +112,13 @@
             width: 100%;
         }
     }
+    .cartas{
+        flex-direction: column;
+        width: 100%;
+        .card{
+            width: 100%;
+        }
+    }
 
 
 }

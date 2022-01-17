@@ -12,15 +12,39 @@ body {
     margin: 0; }
   body .titulo-h1 {
     background-color: #83c5be;
-    /* background-image: linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%); */
     color: white;
     font-family: 'Comfortaa', cursive;
     text-align: center;
     font-size: 35px;
     padding: 15px; }
+  body .titulo-h2 {
+    background-color: #83c5be;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: 35px;
+    padding: 15px;
+    font-size: 25px; }
   body main {
     padding-top: 0px;
     background-color: #caffbf; }
+    body main .parrafo-flex {
+      display: flex;
+      justify-content: center; }
+      body main .parrafo-flex .parrafo-index {
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Comfortaa', cursive;
+        background-color: #fee2f8;
+        background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+        line-height: 1.6;
+        border: black;
+        border-style: solid;
+        width: 90%;
+        height: 40%;
+        display: inline-block;
+        margin: 15px; }
 
 #body {
   background-color: #caffbf; }
@@ -291,9 +315,8 @@ body {
     width: 30%;
     height: 40%;
     display: inline-block;
-    margin: 15px;
-    color: #0a6325; }
-  .cuadrados .cuadrado2, .cuadrados .cuadrado4 {
+    margin: 15px; }
+  .cuadrados .cuadrado2 {
     background-color: #fee2f8;
     background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
     line-height: 1.6;
@@ -302,8 +325,7 @@ body {
     width: 30%;
     height: 40%;
     display: inline-block;
-    margin: 15px;
-    color: #0a6325; }
+    margin: 15px; }
   .cuadrados .cuadrado3 {
     display: inline-block;
     border: black;
@@ -313,14 +335,12 @@ body {
     text-align: center;
     background-color: #cdedfd;
     background-image: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%); }
-  .cuadrados .cuadrado4 {
-    background-color: #40916c;
-    background-image: url(#); }
 
 /* fin conocenos */
 .footer {
   background-color: #40916c;
-  background-size: cover; }
+  background-size: cover;
+  font-family: 'Comfortaa', cursive; }
 
 .first {
   margin-top: 40px;
@@ -347,7 +367,8 @@ body {
   left: 0; }
 
 .first p {
-  font-size: 14px; }
+  font-size: 14px;
+  padding: 10px; }
 
 .second {
   margin-top: 40px;
@@ -534,11 +555,16 @@ body {
     flex-direction: column; }
     .cuadrados .cuadrado1 {
       width: 100%; }
-    .cuadrados .cuadrado2, .cuadrados .cuadrado4 {
+    .cuadrados .cuadrado2 {
       width: 100%; }
     .cuadrados .cuadrado3 {
       width: 100%; }
     .cuadrados .cuadrado3 img {
+      width: 100%; }
+  .cartas {
+    flex-direction: column;
+    width: 100%; }
+    .cartas .card {
       width: 100%; } }
 
 @media only screen and (max-width: 1024px) {
@@ -546,7 +572,59 @@ body {
     flex-direction: column; }
     .cuadrados .cuadrado1 {
       width: 100%; }
-    .cuadrados .cuadrado2, .cuadrados .cuadrado4 {
+    .cuadrados .cuadrado2 {
       width: 100%; }
     .cuadrados .cuadrado3 {
       width: 100%; } }
+
+.cartas {
+  display: flex;
+  margin: 10px;
+  margin-top: 0;
+  padding: 10px;
+  font-family: 'Comfortaa', cursive; }
+  .cartas .card {
+    background-color: #caffbf;
+    padding: 5px;
+    text-align: center; }
+    .cartas .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+.descripcion-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Comfortaa', cursive; }
+  .descripcion-flex .descripcion, .descripcion-flex .ubicacion {
+    background-color: #fee2f8;
+    background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+    line-height: 1.6;
+    border: black;
+    border-style: solid;
+    width: 100%;
+    height: 40%;
+    display: inline-block;
+    margin: 15px;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    height: 40%; }
+  .descripcion-flex .ubicacion {
+    width: 50%; }
+  .descripcion-flex form {
+    background-color: #fee2f8;
+    background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+    line-height: 1.6;
+    border: black;
+    border-style: solid;
+    width: 100%;
+    height: 40%;
+    display: inline-block;
+    margin: 15px;
+    align-self: center;
+    text-align: center;
+    width: 50%;
+    height: 40%; }
