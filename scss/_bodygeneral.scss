@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:$bg_body;
+    font-family: 'Poppins', sans-serif;
+    p {
+        padding: 25px;
+        text-justify: distribute-all-lines;
+        margin: 0;
+    }
+    .titulo-h1 {
+        background-color: #83c5be;
+        /* background-image: linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%); */
+        color: white;
+        font-family: 'Comfortaa', cursive;
+        text-align: center;
+        font-size: 35px;
+        padding: 15px;
+    }
+    main{
+        padding-top: 0px;
+        background-color:$bg_body;
+    }
+}
+#body{
+    background-color: $bg_body;
+}

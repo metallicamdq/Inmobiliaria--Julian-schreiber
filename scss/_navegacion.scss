@@ -1,0 +1,80 @@
+/* navegacion */
+.general-container {
+    width: 100%;
+    top: 0;
+    /* position: absolute; */
+    background-color:$bg_nav;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .flex-container {
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+    }
+        .left {
+            margin: auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            span {
+                font-size: 45px;
+                
+            }
+            .titulo-nav {
+                text-align: center;
+                justify-content: center;
+                display: block;
+                font-size: 2.1rem;
+                margin: auto;
+                color: white
+            }
+        }  
+        .right {
+            width: 100%;
+            border-radius: 30px;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            .links {
+                padding: 30px;
+                width: 100%;
+                margin: auto;
+                display: flex;
+                justify-content: space-around;
+                font-size: 25px;
+                display: block;
+                display: inline-block;
+                a {
+                    padding: 15px;
+                    text-decoration: none;
+                    color: #fff;
+                    transition: all 400ms ease;
+                    &:hover {
+                        background: #2fb4cc;
+                        color: #fff;
+                        padding: 10px;
+                        border-radius: 30px;
+                        position: static;
+                    }
+                }
+                li {
+                    list-style: none;
+                    text-align: center;
+                    display: inline-block;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+}
+
+
+
+/* termina el nav */
