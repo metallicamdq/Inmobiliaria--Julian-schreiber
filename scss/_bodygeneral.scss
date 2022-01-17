@@ -19,6 +19,8 @@
     line-height: 1.6;
     border: black;
     border-style: solid;
+    border-radius: 40px;
+    border-radius: 40px 100px;
     width: 90%;
     height: 40%;
     display: inline-block;
@@ -42,11 +44,13 @@ body {
         text-align: center;
         font-size: 35px;
         padding: 15px;
+        border-radius: 40px 100px;
     }
 
     .titulo-h2 {
         @include titulo;
         font-size: 25px;
+        border-radius: 40px 100px;
     }
 
     main {
@@ -61,7 +65,9 @@ body {
                 text-align: center;
                 font-size: 1.5rem;
                 font-family: 'Comfortaa', cursive;
+                border-radius: 40px 100px;
                 @include cuadrados;
+                
             }
         }
     }
