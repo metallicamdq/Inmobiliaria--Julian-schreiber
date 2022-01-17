@@ -1,3 +1,19 @@
 $bg_nav:#95d5b2;
 $bg_body:#caffbf;
 $bg_footer:#40916c;
+
+
+$colores:(
+    xl:blue,
+    l: red,
+    m: rgb(10, 99, 37),
+    s: violet,
+);
+$xl: map-get($colores, xl);
+$xl: map-get($colores, s);
+$xl: map-get($colores, l);
+$xl: map-get($colores, m);
+
+
+
+
