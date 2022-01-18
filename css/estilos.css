@@ -592,7 +592,7 @@ body {
       height: 100%;
       object-fit: cover; }
 
-.galeria-alquileres {
+.galeria-propiedad {
   display: grid;
   justify-content: center;
   grid-auto-flow: dense;
@@ -600,7 +600,7 @@ body {
   grid-auto-rows: auto;
   padding: 2px;
   gap: 5px; }
-  .galeria-alquileres .gallery-item {
+  .galeria-propiedad .gallery-propiedad {
     display: flex;
     justify-items: center;
     position: relative;
@@ -613,8 +613,9 @@ body {
     line-height: 1.6;
     border: black;
     border-style: solid;
+    border-radius: 40px 50px;
     width: 100%;
     height: 100%;
     display: inline-block; }
-  .galeria-alquileres .descripcion {
+  .galeria-propiedad .descripcion {
     align-self: center; }
