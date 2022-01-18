@@ -311,26 +311,20 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center; }
+  .cuadrados .formato-p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px; }
   .cuadrados .cuadrado1 {
     background-color: #fee2f8;
     background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
     line-height: 1.6;
     border: black;
     border-style: solid;
-    width: 30%;
+    width: 100%;
     height: 40%;
-    display: inline-block;
-    margin: 15px; }
-  .cuadrados .cuadrado2 {
-    background-color: #fee2f8;
-    background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
-    line-height: 1.6;
-    border: black;
-    border-style: solid;
-    width: 30%;
-    height: 40%;
-    display: inline-block;
-    margin: 15px; }
+    display: inline;
+    margin: 15px;
+    border-radius: 50px 100px; }
   .cuadrados .cuadrado3 {
     display: inline-block;
     border: black;
@@ -339,7 +333,8 @@ body {
     margin: 10px;
     text-align: center;
     background-color: #cdedfd;
-    background-image: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%); }
+    background-image: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%);
+    font-family: 'Comfortaa', cursive; }
 
 /* fin conocenos */
 .footer {
@@ -597,39 +592,29 @@ body {
       height: 100%;
       object-fit: cover; }
 
-.descripcion-flex {
-  display: flex;
-  flex-direction: column;
+.galeria-alquileres {
+  display: grid;
   justify-content: center;
-  text-align: center;
-  font-family: 'Comfortaa', cursive; }
-  .descripcion-flex .descripcion, .descripcion-flex .ubicacion {
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-auto-rows: auto;
+  padding: 2px;
+  gap: 5px; }
+  .galeria-alquileres .gallery-item {
+    display: flex;
+    justify-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border-radius: 5px;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
     background-color: #fee2f8;
     background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
     line-height: 1.6;
     border: black;
     border-style: solid;
     width: 100%;
-    height: 40%;
-    display: inline-block;
-    margin: 15px;
-    align-self: center;
-    text-align: center;
-    width: 100%;
-    height: 40%; }
-  .descripcion-flex .ubicacion {
-    width: 50%; }
-  .descripcion-flex form {
-    background-color: #fee2f8;
-    background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
-    line-height: 1.6;
-    border: black;
-    border-style: solid;
-    width: 100%;
-    height: 40%;
-    display: inline-block;
-    margin: 15px;
-    align-self: center;
-    text-align: center;
-    width: 50%;
-    height: 40%; }
+    height: 100%;
+    display: inline-block; }
+  .galeria-alquileres .descripcion {
+    align-self: center; }

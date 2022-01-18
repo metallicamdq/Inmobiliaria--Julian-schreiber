@@ -5,9 +5,9 @@
         line-height: 1.6;
         border: black;
         border-style: solid;
-        width: 30%;
+        width: 100%;
         height: 40%;
-        display: inline-block;
+        display: inline;
         margin: 15px;
 }
 .cuadrados {
@@ -15,12 +15,14 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    .formato-p{
+        font-family: 'Comfortaa', cursive;
+        font-size: 20px;
+    }
     .cuadrado1 {
         @include cuadrados;
-    
-    }
-    .cuadrado2 {
-        @include cuadrados;
+        border-radius: 50px 100px;
+        
     
     }
     .cuadrado3 {
@@ -32,6 +34,7 @@
         text-align: center;
         background-color: #cdedfd;
         background-image: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%);
+        font-family: 'Comfortaa', cursive;
     }
     
 }

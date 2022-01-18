@@ -5,36 +5,27 @@
     border: black;
     border-style: solid;
     width: 100%;
-    height: 40%;
+    height: 100%;
     display: inline-block;
-    margin: 15px;
 }
-
-.descripcion-flex {
-    display: flex;
-    flex-direction: column;
+.galeria-alquileres {
+    display: grid;
     justify-content: center;
-    text-align: center;
-    font-family: 'Comfortaa', cursive;
-
-    .descripcion {
-        @include cuadrados;
-        align-self: center;
-        text-align: center;
-        width: 100%;
-        height: 40%;
-    }
-
-    .ubicacion {
-        @extend .descripcion;
-        width: 50%;
-    }
-
-    form {
-        @include cuadrados;
-        align-self: center;
-        text-align: center;
-        width: 50%;
-        height: 40%;
-    }
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(min(30rem), 1fr));
+    grid-auto-rows: auto;
+    padding: 2px;
+    gap: 5px;
+    .gallery-item {
+        display: flex;
+        justify-items: center;
+        position: relative;
+        overflow: hidden;
+        transition: all 500ms ease;
+        border-radius: 5px;
+        box-shadow: 1px 10px 15px rgba(0,0,0,0.50);
+        @include cuadrados;}
+        .descripcion{
+            align-self: center;
+        }
 }
